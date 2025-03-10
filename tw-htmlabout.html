@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>About Țuluca Maria-Laura</title>
+    <link rel="stylesheet" href="styles/style_burger.css" />
+    <link rel="stylesheet" href="styles/style_footer.css" />
+    <link rel="stylesheet" href="styles/style_carousel.css" />
+    <script src="script_carousel.js" defer></script>
+    <style>
+      body {
+        text-align: center;
+        font-family: "Brush Script MT", cursive;
+        background: #af667d;
+        background-size: cover;
+        margin: 0;
+        overflow-x: hidden;
+      }
+
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      nav ul li {
+        display: inline;
+        margin: 0 15px;
+      }
+
+      nav ul li a {
+        font-size: 20px;
+        text-decoration: none;
+        color: #560f26;
+      }
+
+      h1 {
+        color: #560f26;
+        font-size: 5vw;
+        opacity: 0;
+        text-align: center;
+        animation: fadeIn 2s forwards;
+      }
+
+      @keyframes fadeIn {
+        to {
+          opacity: 1;
+        }
+      }
+
+      footer {
+        text-align: center;
+      }
+
+      h2 {
+        color: #560f26;
+        font-size: 2em;
+      }
+
+      table {
+        width: 80%;
+        margin: 20px auto;
+        text-align: left;
+      }
+
+      img {
+        max-width: 80%;
+        height: auto;
+        border-radius: 8px;
+        transition: transform 0.4s ease, filter 0.4s ease;
+        margin-right: 20px;
+        /* spațiu între imagine și textul din dreapta */
+        margin-bottom: 10px;
+      }
+
+      td {
+        vertical-align: top;
+        padding: 20px;
+        width: 50%;
+        cursor: pointer;
+      }
+
+      td p {
+        font-size: 2rem;
+        transition: all 0.4s ease;
+        margin-top: 10px;
+        /* distanțare între text și imaginea de sus */
+        margin-bottom: 20px;
+        /* distanțare între text și imaginea de jos */
+      }
+
+      td:hover img {
+        transform: scale(1.1);
+        /* mărește imaginea */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        /* Umbra subtilă */
+      }
+
+      td:hover p {
+        transform: scale(1.1);
+        color: #daaebb;
+        /*schimbă culoarea textului și îl mărește*/
+      }
+
+      .logo img {
+        width: 60px;
+        height: auto;
+      }
+
+      td img {
+        max-width: 100%;
+        max-height: auto;
+      }
+
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 2rem;
+        }
+        td p {
+          font-size: 1.5em;
+        }
+
+        /* Ajustează tabelul pentru a face pozele să apară sub text */
+        table {
+          width: 100%;
+          display: block;
+        }
+
+        table tr {
+          display: block;
+          margin-bottom: 20px;
+        }
+
+        table td {
+          display: block;
+          width: 100%;
+          padding: 10px 0;
+          text-align: center;
+        }
+
+        /* Imaginea și textul afișate unul sub altul */
+        td img {
+          width: 60%;
+          max-width: 60%;
+          height: auto;
+          margin-bottom: 10px;
+        }
+        .carousel-button {
+          font-size: 1.5rem; /* Redu dimensiunea fontului pentru butoane */
+          padding: 0.25rem; 
+        }
+
+        .carousel-button.prev {
+          left: 1rem; /* Ajustează distanța față de marginea stângă */
+        }
+
+        .carousel-button.next {
+          right: 1rem; /* Ajustează distanța față de marginea dreaptă */
+        }
+      }
+
+      /* Ecran mediu (tablete) */
+      @media (max-width: 1024px) {
+        h1 {
+          font-size: 2.5rem;
+        }
+
+        td p {
+          font-size: 1.8em;
+        }
+      }
+
+      /* Ecran mare (desktop) */
+      @media (min-width: 1025px) {
+        h1 {
+          font-size: 3rem;
+        }
+
+        td p {
+          font-size: 2rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- navigation bar -->
+    <nav class="nav">
+      <div class="logo">
+        <a href="tw-htmlhome.html"><img src="icons/logo.png" alt="logo" /></a>
+      </div>
+
+      <!-- burger menu -->
+      <input
+        type="checkbox"
+        id="burger-checkbox"
+        class="burger-checkbox"
+        style="display: none"
+      />
+      <label for="burger-checkbox" class="burger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </label>
+
+      <div class="nav-links">
+        <a href="tw-htmlhome.html">Home</a>
+        <a href="tw-htmlabout.html">About</a>
+        <a href="tw-htmlCV.html">Portofolio</a>
+        <a href="tw-htmlcontact.html">Contact</a>
+      </div>
+    </nav>
+    <br />
+    <h1>Personal Website: Tuluca Maria-Laura</h1>
+
+    <br />
+
+    <table>
+      <tr>
+        <td>
+          <h2>About me:</h2>
+          <p>
+            Hi! My name is Tuluca Maria-Laura and I was born on April 18 2005. I
+            am a second year student at University Politehnica Bucharest,
+            Faculty of Automatic Control and Computer Science. I enjoy reading,
+            spending time with my family and exploring new cultures through
+            travel.
+          </p>
+        </td>
+        <td>
+          <img
+            src="images/graduationMe.jpeg"
+            alt="graduation me"
+            onclick="enlarge"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="images/familyMe.jpeg" alt="family me" />
+        </td>
+        <td>
+          <p>
+            These are my two siblings! My sister's name is Daria-Nicoleta, she
+            was born in August 2009 and she's a freshman in highschool. My
+            brother's name is Matei-Ioan, he was born in November 2021 and he
+            just started kindergarten.
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>
+            Between 2011 and 2024, I was part of the artistic group "Magic Star"
+            for modern and hip-hop dances and the artistic group "Grailul
+            Armanesc" for Aromanian dances. We participated in national and
+            international competitions, where we received many awards.
+          </p>
+        </td>
+        <td>
+          <img src="images/danceMe.jpeg" alt="dance me" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="images/kaliMe.jpeg" alt="kali me" />
+        </td>
+        <td>
+          <p>
+            For 3 years, I practiced kickboxing and Kali, a Filipino martial art
+            involving weapons, at a club in Calarasi. During this time, I pushed
+            both my physical and mental boundaries, all while enjoying the
+            process. I also earned my green belt in Kali Arnis Eskrima in May
+            2024.
+          </p>
+        </td>
+      </tr>
+    </table>
+
+    <h2>
+      I also love to travel! Sometimes, my life seems to be time-starved and
+      technology-driven. Travel allows me to escape life’s daily demands, dramas
+      and deadlines and it enables me to clear my mind and charge my batteries.
+    </h2>
+
+    <section aria-label="Travel Photos">
+      <div class="carousel" data-carousel>
+        <button class="carousel-button prev" data-carousel-button="prev">
+          &#8592;
+        </button>
+        <button class="carousel-button next" data-carousel-button="next">
+          &#8594;
+        </button>
+        <ul data-slides>
+          <li class="slide" data-active>
+            <img src="images/p1.jpeg" alt="travel ph1" />
+          </li>
+          <li class="slide">
+            <img src="images/p2.jpeg" alt="travel ph2" />
+          </li>
+          <li class="slide">
+            <img src="images/p3.jpeg" alt="travel ph3" />
+          </li>
+          <li class="slide">
+            <img src="images/p4.jpeg" alt="travel ph4" />
+          </li>
+          <li class="slide">
+            <img src="images/p5.jpeg" alt="travel ph5" />
+          </li>
+          <li class="slide">
+            <img src="images/p6.jpeg" alt="travel ph6" />
+          </li>
+        </ul>
+      </div>
+    </section>
+    <br />
+    <footer>
+      <div>
+        <a href="https://wa.me/40737037701" target="_blank">
+          <img src="icons/whatsapp.png" alt="WhatsApp" />
+        </a>
+        <a href="https://www.facebook.com/maria.tuluca.3" target="_blank">
+          <img src="icons/facebook.png" alt="Facebook" />
+        </a>
+        <a
+          href="https://www.instagram.com/maariaa.lmt/profilecard/?igsh=MWh0NXU4aGQ3dHY3Zw=="
+          target="_blank"
+        >
+          <img src="icons/instagram.png" alt="Instagram" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/maria-țuluca-43b2b4317"
+          target="_blank"
+        >
+          <img src="icons/linkedin.png" alt="LinkedIn" />
+        </a>
+        <a href="https://github.com/MariaTuluca" target="_blank">
+          <img src="icons/github.png" alt="GitHub" />
+        </a>
+        <a href="mailto:maria.tuluca@gmail.com" target="_blank">
+          <img src="icons/email.png" alt="Email" />
+        </a>
+      </div>
+      <br />
+      <p>&copy; 2024 Țuluca Maria-Laura. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

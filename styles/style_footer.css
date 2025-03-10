@@ -1,0 +1,62 @@
+footer {
+  background-color: rgb(250, 189, 209);
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+  /* Asigură că ocupă toată lățimea */
+  box-sizing: border-box;
+  /* Include padding-ul în dimensiunea totală */
+  position: relative;
+}
+
+footer a {
+  margin: 0 10px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+footer img {
+  width: 40px;
+  height: auto;
+  transition: transform 0.4s ease;
+  /* Tranziție pentru mărire și schimbarea culorii */
+}
+
+footer a:hover img {
+  transform: scale(1.4);
+  /* imaginea se mărește la hover */
+}
+
+footer p {
+  font-family: 'Play', sans-serif;
+  color: #5f0724;
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+/* Responsivitate pentru ecrane mici (telefoane) */
+@media (max-width: 768px) {
+  footer {
+    padding: 15px 10px;
+    text-align: center;
+    /* Aliniază textul central pe telefoane */
+  }
+
+  footer p {
+    font-size: 0.8rem;
+    /* Font mai mic pe ecrane mici */
+  }
+}
+
+/* Responsivitate pentru ecrane mari (tablete și desktopuri) */
+@media (min-width: 768px) {
+  footer {
+    padding: 20px 50px;
+    text-align: center;
+  }
+
+  footer p {
+    font-size: 1rem;
+  }
+}

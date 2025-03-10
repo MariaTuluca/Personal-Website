@@ -1,0 +1,97 @@
+/* Styling general pentru bara de navigare */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fabdd1;
+  position: relative;
+  z-index: 10;
+  box-sizing: border-box;
+}
+
+.nav .logo img {
+  width: 60px;
+  height: auto;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+}
+
+/* Styling pentru linkurile din meniu */
+.nav-links a {
+  font-family: 'Brush Script MT', cursive;
+  text-decoration: none;
+  color: rgb(147, 51, 83);
+  margin: 0 15px;
+  font-size: 1.2rem;
+  transition: all 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: rgb(103, 29, 54);
+  transform: scale(1.1);
+  text-decoration: underline;
+}
+
+/* Styling pentru burger menu */
+.burger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 10;
+  position: relative;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(216, 112, 147);
+  margin: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Linkurile devin vizibile când burger-ul este activ */
+.burger-checkbox:checked ~ .nav-links {
+  display: flex;
+}
+
+/* Responsivitate pentru meniul burger */
+@media (max-width: 768px) {
+  .burger {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: rgb(218, 81, 127);
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .nav-links a {
+    margin: 10px 0;
+    font-size: 1.5rem;
+  }
+}
+
+/* Responsivitate pentru ecrane mari */
+@media (min-width: 769px) {
+  .nav-links {
+    display: flex;
+  }
+
+  .burger {
+    display: none;
+  }
+}

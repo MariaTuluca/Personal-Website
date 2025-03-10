@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>CV Țuluca Maria-Laura</title>
+  <link rel="stylesheet" href="styles/style_burger.css">
+  <link rel="stylesheet" href="styles/style_footer.css">
+  <style>
+    body {
+      font-family: "Brush Script MT", cursive;
+      background-image: linear-gradient(#f7e3e9, #F7ADC5);
+      margin: 0px 10px;
+      padding: 10px;
+    }
+
+    nav {
+      margin-bottom: 20px;
+    }
+
+    nav a {
+      font-size: 18px;
+      text-decoration: none;
+      color: #371152;
+      margin: 0 10px;
+      transition: color 0.3s ease, text-decoration 0.3s ease;
+    }
+
+    nav a:hover {
+      color: aliceblue;
+      text-decoration: underline;
+    }
+
+    h1 {
+      color: #250C18;
+      font-size: 3rem;
+      text-align: center;
+    }
+
+    h2 {
+      color: #250C18;
+      font-size: 2.3rem;
+      margin: 20px 20px;
+    }
+
+    hr {
+      border: 0;
+      height: 2px;
+      background-color: #4b0082;
+      margin: 20px 0;
+    }
+
+    p {
+      font-size: 2rem;
+    }
+
+    table {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    table img {
+      max-width: 50%;
+      height: auto;
+      border-radius: 8px;
+      margin-left: 40%;
+      transition: all 0.3s ease;
+    }
+
+    li {
+      list-style-position: inside;
+    }
+
+    #odd {
+      text-align: left;
+      background-color: #eab5e2;
+      color: #91427B;
+    }
+
+    #even {
+      text-align: right;
+      background-color: #e5e0f5;
+      color: #574485;
+    }
+
+    ol>li {
+      margin: 20px 0;
+      padding: 20px;
+      font-size: 2rem;
+      transition: transform 0.3s ease-in-out, color 0.3s ease;
+    }
+
+    #odd:hover {
+      transform: scale(1.03);
+      color: #140C1E;
+    }
+
+    #even:hover {
+      transform: scale(1.03);
+      color: #140C1E;
+    }
+
+    ul,
+    ol {
+      padding-left: 20px;
+      margin: 0;
+    }
+
+    a {
+      color: #4b0082;
+      text-decoration: none;
+      transition: color 0.3s ease, text-decoration 0.3s ease;
+    }
+
+    a:hover {
+      color: black;
+      text-decoration: underline;
+    }
+
+    a.download {
+      font-size: 1.9rem;
+      color: #574485;
+    }
+
+    a.download:hover {
+      text-decoration: underline;
+    }
+
+    a.download:active {
+      color: black;
+    }
+
+    td img:hover {
+      transform: scale(1.1);
+      /* mărește imaginea */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      /* Umbra subtilă */
+    }
+
+    /* Responsiveness */
+    @media (max-width: 425px) {
+      h1 {
+        font-size: 1rem;
+      }
+
+      h2 {
+        font-size: 1.2rem;
+      }
+
+      table img {
+        margin-left: 0;
+        max-width: 50%;
+      }
+
+      ol>li {
+        font-size: 1rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <br />
+  <!-- navigation bar -->
+  <nav class="nav">
+    <div class="logo">
+      <a href="tw-htmlhome.html"><img src="icons/logo.png" alt="logo" /></a>
+    </div>
+
+    <!-- burger menu -->
+    <input type="checkbox" id="burger-checkbox" class="burger-checkbox" style="display: none" />
+    <label for="burger-checkbox" class="burger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </label>
+
+    <div class="nav-links">
+      <a href="tw-htmlhome.html">Home</a>
+      <a href="tw-htmlabout.html">About</a>
+      <a href="tw-htmlCV.html">Portofolio</a>
+      <a href="tw-htmlcontact.html">Contact</a>
+    </div>
+  </nav>
+
+  <br />
+  <table>
+    <tr>
+      <td>
+        <h1>Curriculum Vitae: Tuluca Maria-Laura</h1>
+      </td>
+      <td>
+        <img src="images/graduationMe.jpeg" alt="eu" />
+      </td>
+    </tr>
+  </table>
+
+  <h2>
+    I am a second year student at University Politehnica Bucharest, Faculty of
+    Automatic Control and Computer Science, Systems Engineering department.
+  </h2>
+
+  <ol>
+    <li id="odd">
+      <strong>Education:</strong>
+      <ul>
+        <li>
+          Baccalaureate Diploma - Mathematics and Computer Science, "Mihai
+          Eminescu" Theoretical High School
+          <ul>
+            <li>Baccalaureate grade: 9.46</li>
+            <li>GPA: 9.99</li>
+            <li>09/2019-06/2023, Calarasi</li>
+            <li><a href="https://ltme.ro/" target="_blank">LTME</a></li>
+          </ul>
+        </li>
+        <li>
+          Bachelor’s Degree - Computer Science and Systems Engineering,
+          Faculty of Automatic Control and Computer Science
+          <ul>
+            <li>“Politehnica” University of Bucharest</li>
+            <li>GPA (first year): 9.00</li>
+            <li>10/2023 - Present</li>
+            <li>
+              <a href="https://upb.ro/facultati/facultatea-de-automatica-si-calculatoare/" target="_blank">UPB-ACS</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <hr />
+    <li id="even">
+      <strong>Certificates:</strong>
+      <ul>
+        <li>C1 Advanced English Certificate</li>
+        <li>ECDL Certification</li>
+      </ul>
+    </li>
+    <hr />
+    <li id="odd">
+      <strong>Volunteering:</strong>
+      <ul>
+        <li>LSAC Student Association: 10/2023 - present</li>
+        <li>Red Cross Association: 09/2021 - 09/2022</li>
+        <li>CJE Calarasi - Pupil’s Council: 09/2021- 09/2023</li>
+      </ul>
+    </li>
+    <hr />
+    <li id="even">
+      <strong>Important Awards:</strong>
+      <ul>
+        <li>
+          2019 - International Mathematical Contest „Prof. Cristian
+          Lichiardopol” - First Place
+        </li>
+        <li>2021 - Mathematical Olympiad - First Place at Regional Phase</li>
+      </ul>
+    </li>
+    <hr />
+    <li id="odd">
+      <strong>Languages:</strong>
+      <ul>
+        <li>Romanian - Native or Bilingual Proficiency</li>
+        <li>
+          English - Full Professional Proficiency: C1 (Advanced English)
+        </li>
+        <li>Spanish - Beginner</li>
+        <li>German - Beginner</li>
+      </ul>
+    </li>
+    <hr />
+    <li id="even">
+      <strong>Technical skills:</strong>
+      <ul>
+        <li>C - Intermediate</li>
+        <li>C++ - Intermediate</li>
+        <li>Autocad - Beginner</li>
+        <li>Linux - Beginner</li>
+        <li>Matlab - Beginner</li>
+      </ul>
+    </li>
+    <hr />
+    <li id="odd">
+      <strong>Soft skills:</strong>
+      <ul>
+        <li>Team-player</li>
+        <li>Communication</li>
+        <li>Critical thinking</li>
+        <li>Resilience</li>
+        <li>Creativity</li>
+      </ul>
+    </li>
+  </ol>
+  <hr />
+
+  <p>Click on the link to download my CV!</p>
+  <a href="CV_facultate.pdf" class="download">Download!</a>
+  <footer>
+    <div>
+      <a href="https://wa.me/40737037701" target="_blank">
+        <img src="icons/whatsapp.png" alt="WhatsApp" />
+      </a>
+      <a href="https://www.facebook.com/maria.tuluca.3" target="_blank">
+        <img src="icons/facebook.png" alt="Facebook" />
+      </a>
+      <a href="https://www.instagram.com/maariaa.lmt/profilecard/?igsh=MWh0NXU4aGQ3dHY3Zw==" target="_blank">
+        <img src="icons/instagram.png" alt="Instagram" />
+      </a>
+      <a href="https://www.linkedin.com/in/maria-țuluca-43b2b4317" target="_blank">
+        <img src="icons/linkedin.png" alt="LinkedIn" />
+      </a>
+      <a href="https://github.com/MariaTuluca" target="_blank">
+        <img src="icons/github.png" alt="GitHub" />
+      </a>
+      <a href="mailto:maria.tuluca@gmail.com" target="_blank">
+        <img src="icons/email.png" alt="Email" />
+      </a>
+    </div>
+    <br />
+    <p>&copy; 2024 Țuluca Maria-Laura. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>

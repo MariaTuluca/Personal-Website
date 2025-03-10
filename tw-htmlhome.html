@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Website Țuluca Maria-Laura</title>
+  <link rel="stylesheet" href="styles/style_burger.css">
+  <link rel="stylesheet" href="styles/style_footer.css">
+  <link rel="stylesheet" href="styles/style_bubbles.css">
+  <style>
+    html,
+    body {
+      width: 95%;
+      overflow-x: hidden;
+      margin: 1rem 2rem;
+      padding: 5px 10px;
+    }
+
+    body {
+      background: #F18697;
+      background-size: cover;
+      font-family: 'Play', sans-serif;
+    }
+
+    .c1 {
+      display: inline-block;
+    }
+
+    .c2 {
+      display: inline-block;
+    }
+
+    .c3 {
+      display: inline-block;
+    }
+
+    .c4 {
+      display: inline-block;
+    }
+
+    h1 {
+      font-size: 3.2rem;
+      margin-top: 1%;
+      color: #591c25;
+      word-wrap: break-word;
+      /* Permite textului să se împarte pe mai multe linii dacă este prea lung */
+      white-space: normal;
+      /*nu se va tăia textul*/
+      text-align: left;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-top: 1%;
+      color: #591c25;
+      word-wrap: break-word;
+      /* Permite textului să se împarte pe mai multe linii dacă este prea lung */
+      white-space: normal;
+      /*nu se va tăia textul*/
+      text-align: center;
+    }
+
+    .type1,
+    .type2,
+    .type3 {
+      font-size: 1.8rem;
+      font-style: oblique;
+      overflow: hidden;
+      border-right: .15em solid rgb(66, 30, 42);
+      white-space: nowrap;
+      width: 0;
+      animation:
+        typing 1s steps(25, end) forwards;
+    }
+
+    h1 .type2 {
+      animation-delay: 1s;
+    }
+
+    h1 .type3 {
+      animation-delay: 2s;
+    }
+
+    @keyframes typing {
+      from {
+        width: 0
+      }
+
+      to {
+        width: 100%
+      }
+    }
+
+    @keyframes blink {
+      from {
+        border-color: transparent
+      }
+
+      to {
+        border-color: rgb(216, 112, 147);
+      }
+    }
+
+    .logo img {
+      width: 60px;
+      height: auto;
+    }
+
+    footer {
+      padding: 5px 10px;
+      /* Ajustează padding-ul pentru a se încadra bine pe telefoane */
+      text-align: center;
+      /* Centrare pe telefoane */
+    }
+
+    footer p {
+      font-size: 0.7rem;
+      /* Font mai mic în footer */
+    }
+
+
+    /* Responsivitate pentru telefoane mici */
+    @media (max-width: 768px) {
+      body {
+        padding: 5px;
+        margin: 5px;
+      }
+
+      h1,
+      h2 {
+        font-size: 2rem;
+        text-align: center;
+      }
+
+      .type1,
+      .type2,
+      .type3 {
+        font-size: 1.45rem;
+        word-wrap: break-word;
+        /* Permite textului să se împartă pe mai multe linii */
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .logo img {
+        width: 80px;
+      }
+
+      h1 {
+        font-size: 4.2rem;
+      }
+
+      h1 {
+        font-size: 3.2rem;
+      }
+
+      h1 .type1,
+      h1 .type2,
+      h1 .type3 {
+        font-size: 3.2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- navigation bar -->
+  <nav class="nav">
+    <div class="logo">
+      <a href="tw-htmlhome.html"><img src="icons/logo.png" alt="logo"></a>
+    </div>
+
+    <!-- burger menu -->
+    <input type="checkbox" id="burger-checkbox" class="burger-checkbox" style="display:none;">
+    <label for="burger-checkbox" class="burger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </label>
+
+    <div class="nav-links">
+      <a href="tw-htmlhome.html">Home</a>
+      <a href="tw-htmlabout.html">About</a>
+      <a href="tw-htmlCV.html">Portofolio</a>
+      <a href="tw-htmlcontact.html">Contact</a>
+    </div>
+  </nav>
+
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Play" />
+  <h1> Hi!<br></br>
+    My name is Tuluca Maria-Laura and I am a</br>
+    <br></br>
+    <div class="c1">
+      <div class="type1">Computer Science student</div>
+    </div>
+    </br>
+    <div class="c2">
+      <div class="type2">Web Development enthusiast</div>
+    </div>
+    </br>
+    <div class="c3">
+      <div class="type3">Technology lover</div>
+    </div>
+    <br></br>
+  </h1>
+
+  <h2>Important things about me:</h2>
+  <div class="other-things">
+    <div class="line-container">
+      <hr class="horizontal-line">
+      <div class="bubbles">
+        <div class="bubble" onclick="toggleContent('education')">Education</div>
+        <div class="content" id="education">
+          Baccalaureate Diploma 2023- Mathematics and Computer Science, "Mihai
+          Eminescu" Theoretical High School
+          <br>
+          Bachelor’s Degree 2027- Computer Science and Systems Engineering,
+          Faculty of Automatic Control and Computer Science
+        </div>
+        <div class="bubble" onclick="toggleContent('competences')">Competences</div>
+        <div class="content" id="competences">
+          Technical skills: C/C++, HTML, CSS, JavaScript, Matlab, AutoCad
+          <br>
+          Languages: English, Romanian, German, Spanish
+          <br>
+          Soft skills: Team-player, Communication, Critical thinking
+        </div>
+      </div>
+      <hr class="horizontal-line-bottom">
+    </div>
+  </div>
+
+  <h2>Some other things I enjoy:</h2>
+  <div class="other-things">
+    <div class="line-container">
+      <hr class="horizontal-line">
+      <div class="bubbles">
+        <div class="bubble" onclick="toggleContent('movies')">Movies</div>
+        <div class="content" id="movies">
+          Comedy, Action, Sci-Fi
+        </div>
+        <div class="bubble" onclick="toggleContent('music')">Music</div>
+        <div class="content" id="music">
+          RnB, Jazz, Rap, Hip-Hop
+          <br>
+          Artists: Norman Perry, Don Toliver, Flo Milli
+        </div>
+        <div class="bubble" onclick="toggleContent('reading')">Reading</div>
+        <div class="content" id="reading">
+          Sci-Fi, Action, Mythology
+          <br>
+          Authors: Sabaa Tahir, Emmanuel Schmidt, Rick Yancey
+        </div>
+        <div class="bubble" onclick="toggleContent('cooking')">Cooking</div>
+        <div class="content" id="cooking">
+          Desserts, Pasta, Seafood
+        </div>
+      </div>
+      <hr class="horizontal-line-bottom">
+    </div>
+  </div>
+
+  <footer>
+    <br>
+    <div>
+      <a href="https://wa.me/40737037701" target="_blank">
+        <img src="icons/whatsapp.png" alt="WhatsApp">
+      </a>
+      <a href="https://www.facebook.com/maria.tuluca.3" target="_blank">
+        <img src="icons/facebook.png" alt="Facebook">
+      </a>
+      <a href="https://www.instagram.com/maariaa.lmt/profilecard/?igsh=MWh0NXU4aGQ3dHY3Zw==" target="_blank">
+        <img src="icons/instagram.png" alt="Instagram">
+      </a>
+      <a href="https://www.linkedin.com/in/maria-țuluca-43b2b4317" target="_blank">
+        <img src="icons/linkedin.png" alt="LinkedIn">
+      </a>
+      <a href="https://github.com/MariaTuluca" target="_blank">
+        <img src="icons/github.png" alt="GitHub">
+      </a>
+      <a href="mailto:maria.tuluca@gmail.com" target="_blank">
+        <img src="icons/email.png" alt="Email">
+      </a>
+    </div>
+    <br>
+    <p>&copy; 2024 Țuluca Maria-Laura. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleContent(id) {
+      var content = document.getElementById(id);
+      content.classList.toggle('visible');
+    }
+  </script>
+</body>
+
+</html>

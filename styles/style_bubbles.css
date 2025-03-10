@@ -1,0 +1,122 @@
+.other-things {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* Elemente pe verticală implicit */
+}
+
+.line-container {
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* Elementele sunt pe verticală */
+}
+
+/* Linia orizontală superioară */
+.horizontal-line {
+    border-top: 3px solid #591c25;
+    width: 50%;
+    margin: 10px 10px;
+}
+
+/* Linia orizontală inferioară */
+.horizontal-line-bottom {
+    border-top: 3px solid #591c25;
+    width: 50%;
+    margin: 10px 10px;
+}
+
+.bubbles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.bubble {
+    background-color: #F18697;
+    color: #591c25;
+    border-radius: 50%;
+    padding: 15px 30px;
+    margin: 10px 0;
+    cursor: pointer;
+    font-size: 2.2rem;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.bubble:hover {
+    transform: scale(1.1);
+}
+
+.content {
+    display: none;
+    margin-top: 10px;
+    font-size: 1.7rem;
+    color: #591c25;
+    text-align: center;
+}
+
+.content.visible {
+    display: block;
+}
+
+/* Media query pentru ecrane mici */
+@media (max-width: 768px) {
+    .line-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .horizontal-line,
+    .horizontal-line-bottom {
+        width: 80%;
+    }
+
+    .bubbles {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bubble {
+        margin: 10px 0;
+        font-size: 1.7rem;
+    }
+
+    .bubble:hover {
+        transform: scale(1.05);
+    }
+
+    .content {
+        font-size: 1.3rem;
+    }
+}
+
+/* Media query pentru ecrane mari */
+@media (min-width: 769px) {
+    .line-container {
+        flex-direction: column;
+        align-items: left;
+    }
+
+    .horizontal-line,
+    .horizontal-line-bottom {
+        width: 100%;
+    }
+
+    .bubbles {
+        flex-direction: column;
+        align-items: left;
+    }
+
+    .bubble {
+        margin: 20px 0;
+    }
+}

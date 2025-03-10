@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Țuluca Maria-Laura</title>
+    <link rel="stylesheet" href="styles/style_burger.css" />
+    <link rel="stylesheet" href="styles/style_footer.css" />
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            background-image: linear-gradient(#EF7CA8, #e9ced9);
+            background-size: cover;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        a {
+            font-size: 2rem;
+            text-decoration: none;
+            color: #e9dfe3;
+            margin: 0 10px;
+        }
+
+        a:hover {
+            color: #6C002A;
+            text-decoration: underline;
+        }
+
+        #tel {
+            text-decoration: none;
+            color: #e9dfe3;
+        }
+
+        #tel:hover {
+            color: #6C002A;
+            text-decoration: underline;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        table {
+            margin: 0 auto;
+        }
+
+        table img {
+            border-radius: 8px;
+            width: 15rem;
+            height: auto;
+            transition: transform 1s ease-in-out;
+        }
+
+        table img:hover {
+            transform: scale(1.1);
+
+        }
+
+        .highlighted-text {
+            color: #CB0D57;
+        }
+
+        td {
+            padding: 10px;
+            font-size: 2rem;
+        }
+
+        #txtlabel {
+            text-align: right;
+        }
+
+        #linkslabel {
+            text-align: left;
+        }
+
+        div img {
+            margin: 0 10px;
+            width: 32px;
+            height: 32px;
+            transition: all 0.3s ease;
+        }
+
+        div img:hover {
+            transform: scale(1.2);
+        }
+
+        hr {
+            border: 0;
+            height: 2px;
+            background-color: #DE3163;
+            width: 60%;
+            margin: 20px auto;
+        }
+
+        form {
+            color: #571740;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        textarea,
+        input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #571740;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #DE3163;
+        }
+
+        #contact-section {
+            opacity: 0;
+            transform: translateY(-100%);
+            animation: slideIn 1.5s forwards;
+        }
+
+        @keyframes slideIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 5px;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+            a {
+                font-size: 1rem;
+            }
+
+            nav .nav-links {
+                font-size: 1.2rem;
+            }
+
+            table img {
+                width: 10rem;
+            }
+
+            td {
+                font-size: 1.2rem;
+                padding: 5px;
+            }
+
+            textarea,
+            input[type="text"] {
+                width: 80%;
+                font-size: 0.9rem;
+            }
+
+            input[type="submit"] {
+                font-size: 1rem;
+                padding: 8px;
+            }
+
+            div img {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navigation bar -->
+    <nav class="nav">
+        <div class="logo">
+            <a href="tw-htmlhome.html"><img src="icons/logo.png" alt="logo"></a>
+        </div>
+
+        <!-- burger menu -->
+        <input type="checkbox" id="burger-checkbox" class="burger-checkbox" style="display:none;">
+        <label for="burger-checkbox" class="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+
+        <div class="nav-links">
+            <a href="tw-htmlhome.html">Home</a>
+            <a href="tw-htmlabout.html">About</a>
+            <a href="tw-htmlCV.html">Portofolio</a>
+            <a href="tw-htmlcontact.html">Contact</a>
+        </div>
+    </nav>
+
+    <h1 class="highlighted-text">Contact - Țuluca Maria-Laura</h1>
+
+    <table id="contact-section">
+        <tr>
+            <td colspan="2">
+                <img src="images/contactMe.jpeg" alt="Țuluca Maria-Laura">
+            </td>
+        </tr>
+        <tr>
+            <td id="txtlabel" class="highlighted-text">
+                <p><strong>Phone number:</strong></p>
+                <p><strong>Email:</strong></p>
+                <p><strong>Facebook:</strong></p>
+                <p><strong>Instagram:</strong></p>
+                <p><strong>LinkedIn:</strong></p>
+                <p><strong>GitHub:</strong></p>
+            </td>
+            <td id="linkslabel">
+                <p id="tel">+40 737 037 701</p>
+                <p><a href="mailto:maria.tuluca@gmail.com" target="_blank">maria.tuluca@gmail.com</a></p>
+                <p><a href="https://www.facebook.com/maria.tuluca.3" target="_blank">@Maria-Laura Țuluca</a></p>
+                <p><a href="https://www.instagram.com/maariaa.lmt/profilecard/?igsh=MWh0NXU4aGQ3dHY3Zw=="
+                        target="_blank">@maariaa.lmt</a></p>
+                <p><a href="https://www.linkedin.com/in/maria-țuluca-43b2b4317" target="_blank">@Maria Țuluca</a></p>
+                <p><a href="https://github.com/MariaTuluca" target="_blank">@Maria Țuluca</a></p>
+            </td>
+        </tr>
+    </table>
+
+    <div>
+        <a href="https://wa.me/40737037701" target="_blank">
+            <img src="icons/whatsapp.png" alt="WhatsApp">
+        </a>
+        <a href="https://www.facebook.com/maria.tuluca.3" target="_blank">
+            <img src="icons/facebook.png" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/maariaa.lmt/profilecard/?igsh=MWh0NXU4aGQ3dHY3Zw==" target="_blank">
+            <img src="icons/instagram.png" alt="Instagram">
+        </a>
+        <a href="https://www.linkedin.com/in/maria-țuluca-43b2b4317" target="_blank">
+            <img src="icons/linkedin.png" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/MariaTuluca" target="_blank">
+            <img src="icons/github.png" alt="GitHub">
+        </a>
+    </div>
+
+    <hr>
+    <p class="highlighted-text"><b>Send me an email!</b></p>
+
+    <form action="mailto:maria.tuluca@gmail.com" method="post" enctype="text/plain">
+        <label for="name">Name: </label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="subject">Subject: </label><br>
+        <input type="text" id="subject" name="subject" required><br><br>
+        <label for="body">Body: </label><br>
+        <textarea id="body" name="body" rows="10" cols="45" required></textarea><br><br>
+        <input type="submit" value="Send">
+    </form>
+    <br>
+    <footer>
+        <div>
+          <a href="https://wa.me/40737037701" target="_blank">
+            <img src="icons/whatsapp.png" alt="WhatsApp" />
+          </a>
+          <a href="https://www.facebook.com/maria.tuluca.3" target="_blank">
+            <img src="icons/facebook.png" alt="Facebook" />
+          </a>
+          <a href="https://www.instagram.com/maariaa.lmt/profilecard/?igsh=MWh0NXU4aGQ3dHY3Zw==" target="_blank">
+            <img src="icons/instagram.png" alt="Instagram" />
+          </a>
+          <a href="https://www.linkedin.com/in/maria-țuluca-43b2b4317" target="_blank">
+            <img src="icons/linkedin.png" alt="LinkedIn" />
+          </a>
+          <a href="https://github.com/MariaTuluca" target="_blank">
+            <img src="icons/github.png" alt="GitHub" />
+          </a>
+          <a href="mailto:maria.tuluca@gmail.com" target="_blank">
+            <img src="icons/email.png" alt="Email" />
+          </a>
+        </div>
+        <p>&copy; 2024 Țuluca Maria-Laura. All rights reserved.</p>
+      </footer>
+</body>
+
+</html>
